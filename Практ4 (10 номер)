@@ -1,0 +1,24 @@
+def fibonacci_sum(n, k):
+
+    if n <= 0:
+        return 0
+
+    a = 0
+    b = 1
+    sum_fib = 0
+
+    for i in range(k + n):
+        if i >= k:
+            sum_fib += a
+
+        c = a + b
+        a = b
+        b = c
+
+    return sum_fib
+
+ля
+n = int(input("Введите количество чисел Фибоначчи для суммирования (n): "))
+k = int(input("Введите индекс первого числа Фибоначчи для суммирования (k): "))
+result = fibonacci_sum(n, k)
+print("Сумма чисел Фибоначчи:", result)
