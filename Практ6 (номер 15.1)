@@ -1,0 +1,12 @@
+def find_duplicates(input_list):
+    seen = set()
+    duplicates = set()
+    for item in input_list:
+        if item in seen:
+            duplicates.add(item)
+        seen.add(item)
+    return list(duplicates)
+
+my_list = input("Введите цифры без пробела")
+duplicate_elements = find_duplicates(my_list)
+print(f"Повторяющиеся элементы: {duplicate_elements}")
