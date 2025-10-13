@@ -1,0 +1,20 @@
+def process_array(arr):
+
+  odd_numbers = [num for num in arr if num % 2 != 0]
+
+  if not odd_numbers:
+    print("В исходном массиве нет нечетных чисел.")
+  else:
+    odd_numbers.sort(reverse=True)  # Сортировка в порядке убывания
+    print("Массив нечетных чисел в порядке убывания:", odd_numbers)
+
+
+# Массивы
+array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+process_array(array1)  # Массив нечетных чисел в порядке убывания: [9, 7, 5, 3, 1]
+
+array2 = [2, 4, 6, 8, 10]
+process_array(array2)  # В исходном массиве нет нечетных чисел.
+
+array3 = [11, 5, 1, 7, 3, 13]
+process_array(array3) # Массив нечетных чисел в порядке убывания: [13, 11, 7, 5, 
