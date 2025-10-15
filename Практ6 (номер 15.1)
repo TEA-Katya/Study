@@ -1,10 +1,10 @@
 def find_duplicates(input_list):
-    seen = set()
-    duplicates = set()
+    seen = set() 
+    duplicates = set() #Создаем объект-множество
     for item in input_list:
         if item in seen:
-            duplicates.add(item)
-        seen.add(item)
+            duplicates.add(item) #Добавляем повторно встречающуюся цифру к дубликатам
+        seen.add(item) #Добавляем все цифры в увиденные 
     return list(duplicates)
 
 my_list = input("Введите цифры без пробела")
