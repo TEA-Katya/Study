@@ -1,6 +1,6 @@
 def process_array(arr):
 
-  odd_numbers = [num for num in arr if num % 2 != 0]
+  odd_numbers = [num for num in arr if num % 2 != 0] #проверяем каждый элемент и является ли число нечетным
 
   if not odd_numbers:
     print("В исходном массиве нет нечетных чисел.")
