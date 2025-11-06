@@ -7,7 +7,7 @@ def is_prime(n):
 
 def is_binary_palindrome(n):
     #Проверяем, является ли двоичная запись числа палиндромом.
-    binary = bin(n)[2:] # Получаем двоичную запись, обрезая префикс '0b'
+    binary = bin(n)[2:] # Получаем двоичную запись
     return binary == binary[::-1]
 
 def find_binary_numbers(n_limit):
