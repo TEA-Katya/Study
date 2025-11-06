@@ -17,4 +17,4 @@ def find_binary_numbers(n_limit):
 
 n = int(input("Задайте верхнюю границу: " ))
 result = find_binary_numbers(n)
-print(f"Простые числа до {n}, двоичная запись которых - палиндром: {res
+print(f"Простые числа до {n}, двоичная запись которых - палиндром:", result)
