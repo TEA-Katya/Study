@@ -8,11 +8,9 @@ def reverse_number_recursive(number):
         print(last_digit, end="")
         # Рекурсивно вызываем функцию для оставшейся части числа (без последней цифры)
         reverse_number_recursive(number // 10)
-
-# Получаем число от пользователя
 try:
     user_input = int(input("Введите целое число: "))
-    # Обрабатываем случай отрицательного числа, выводя сначала знак
+    # Обрабатываем случай отрицательного числа, выводим сначала знак
     if user_input < 0:
         print("-", end="")
         user_input = abs(user_input)
