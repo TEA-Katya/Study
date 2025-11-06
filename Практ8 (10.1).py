@@ -19,7 +19,6 @@ def find_max_in_sorted_rows(matrix):
     return max_value
 
 def input_matrix():
-    #Ввод матрицы пользователем
     rows = int(input("Введите количество строк в матрице: "))
     cols = int(input("Введите количество столбцов в матрице: "))
     matrix = []
@@ -47,4 +46,4 @@ max_value = find_max_in_sorted_rows(matrix)
 if max_value is not None:
     print("Максимальный элемент в упорядоченных строках:", max_value)
 else:
-    print("В матрице нет упорядоченных строк."
+    print("В матрице нет упорядоченных строк.")
